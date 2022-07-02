@@ -1,0 +1,42 @@
+create table Albums
+(
+  albumId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name varchar(100) NOT NULL,
+  artist varchar (100) NOT NULL
+);
+
+create table Songs
+(
+  songId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name varchar(100) NOT NULL,
+  artist varchar(100) NOT NULL
+);
+
+create table OnAlbum
+(
+  albumId INT NOT NULL,
+  songId INT NOT NULL,
+  FOREIGN KEY (albumId) REFERENCES Albums(albumId),
+  FOREIGN KEY (songId) REFERENCES Songs(songId)
+);
+
+create table Notes
+(
+  noteId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  text varchar(200) NOT NULL,
+  date Date
+);
+
+create table Videos
+(
+  videoId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name varchar(100) NOT NULL,
+  url varchar(2083)
+);
+
+create table Images
+(
+  imgId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  img BLOB,
+  imgName varchar(100)
+)
