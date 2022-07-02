@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="./src/main.css">
+    <meta charset="utf-8">
+    <title>SKYWAYMAGS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+  </head>
+  <body>
+
+    <div id="desktop">
+      <!-- desktop items -->
+      <div id="shortcuts">
+
+        <article id="throw-aways" class="desktop-item">
+          <img src="./assets/img/recycle_bin_full-4.png"/>
+          <br>throw-aways
+        </article>
+
+        <article id="music" class="desktop-item">
+          <img src="./assets/img/cd_drive_purple-0.png"/>
+          <br>music
+        </article>
+
+        <article id="dates" class="desktop-item">
+          <img src="./assets/img/template_world-1.png"/>
+          <br>dates.txt
+        </article>
+
+        <article id="music-videos" class="desktop-item">
+          <img src="./assets/img/camera3_vid-4.png"/>
+          <br>music videos
+        </article>
+
+        <article id="cool-shit" class="desktop-item">
+          <img src="./assets/img/directory_closed-4.png"/>
+          <br>cool shit
+        </article>
+
+        <a href="mailto: matthew.beerens@gmail.com">
+          <article class="desktop-item">
+            <img src="./assets/img/modem-5.png"/>
+            <br>contact me
+          </article>
+        </a>
+
+      </div>
+
+      <!-- container for displaying open folders -->
+      <div id="throwAwaysFolder" class="ui-widget-content open-folder">
+
+        <div class="window">
+          <div class="title-bar">
+            <div id="folder-title" class="title-bar-text">throw-aways</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button id="closeFolderThrowAways" aria-label="Close" ></button>
+            </div>
+          </div>
+
+          <!-- window items -->
+          <div class="folder-items">
+
+          </div>
+
+        </div> <!-- end window -->
+
+      </div> <!-- end open folder -->
+
+      <!-- container for displaying open folders -->
+      <div id="music-folder" class="ui-widget-content open-folder">
+
+        <div class="window">
+          <div class="title-bar">
+            <div id="folder-title" class="title-bar-text">music</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button id="close-folder-music" aria-label="Close" ></button>
+            </div>
+          </div>
+
+          <!-- window items -->
+          <div class="folder-items">
+            <article class="folder-item">
+              <img src="./assets/img/cd_audio_cd_a-4.png"/>
+              <br>bedridden.mp3
+            </article>
+          </div>
+
+        </div> <!-- end window -->
+
+      </div> <!-- end open folder -->
+
+      <!-- container for displaying open folders -->
+      <div id="dates-text" class="ui-widget-content open-folder">
+
+        <div class="window">
+          <div class="title-bar">
+            <div id="folder-title" class="title-bar-text">dates.txt</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button id="close-folder-dates" aria-label="Close" ></button>
+            </div>
+          </div>
+
+          <!-- window items -->
+          <div class="folder-items">
+            <p>---------- dates and shit ----------</p>
+            <p>- 6/6/66 satan arrives</p>
+            <p>- 0/0/00 end of the world</p>
+          </div>
+
+        </div> <!-- end window -->
+
+      </div> <!-- end open folder -->
+
+      <!-- container for displaying open folders -->
+      <div id="musicVideosFolder" class="ui-widget-content open-folder">
+
+        <div class="window">
+          <div class="title-bar">
+            <div id="folder-title" class="title-bar-text">music videos</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button id="closeFolderMusicVideos" aria-label="Close" ></button>
+            </div>
+          </div>
+
+          <!-- window items -->
+          <div class="folder-items">
+
+          </div>
+
+        </div> <!-- end window -->
+
+      </div> <!-- end open folder -->
+
+      <!-- container for displaying open folders -->
+      <div id="cool-shit-folder" class="ui-widget-content open-folder">
+
+        <div class="window">
+          <div class="title-bar">
+            <div id="folder-title" class="title-bar-text">cool shit</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button id="close-folder-cool-shit" aria-label="Close" ></button>
+            </div>
+          </div>
+
+          <!-- window items -->
+          <div class="folder-items">
+
+          </div>
+
+        </div> <!-- end window -->
+
+      </div> <!-- end open folder -->
+
+    </div> <!-- end desktop -->
+
+    <!-- desktop task bar -->
+    <nav id="task-bar">
+      <button id="start-button"><img src="./assets/img/start-button.png"/></button>
+
+      <div style="display: flex; align-items: center;">
+        <div id="friend-statement" class="sunken-border">aren't you tired, friend?</div>
+        <div id="clock" class="sunken-border">1:44 AM</div>
+      </div>
+
+    </nav>
+
+<script type="text/javascript" src="./src/main.js" ></script>
+  </body>
+</html>
