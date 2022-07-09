@@ -54,6 +54,44 @@
 
       </div>
 
+      <!-- WINDOWS MEDIA PLAYER -->
+      <div id="media-player" class="ui-widget-content open-folder">
+
+        <div class="window">
+          <div class="title-bar">
+            <div id="folder-title" class="title-bar-text">Windows Media Player</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button id="closeFolderThrowAways" aria-label="Close" ></button>
+            </div>
+          </div>
+
+          <div id="media-player-ui">
+
+            <div class="ui-toolbar">
+              <ul>
+                <li>File</li>
+                <li>View</li>
+                <li>Play</li>
+                <li>Favorites</li>
+                <li>Go</li>
+                <li>Help</li>
+              </ul>
+            </div>
+
+            <div class="video-window">
+              <video src="" autoplay poster="./assets/img/camera3_vid-4.png">
+
+              </video>
+            </div>
+
+          </div>
+
+        </div> <!-- end window -->
+
+      </div> <!-- end windows media player -->
+
       <!-- container for displaying open folders -->
       <div id="throwAwaysFolder" class="ui-widget-content open-folder">
 
